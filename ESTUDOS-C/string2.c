@@ -30,7 +30,7 @@ int main() {
     printf("Quantidade de caracteres: %ld\n", strlen(nome));
 
     // Converter para maiúsculas
-    for(int i = 0; nome[i] != '\0'; i++) {
+    for(int i = 0; nome[i] != '\0'; i++) { 
         nome[i] = toupper(nome[i]);
     }
 
