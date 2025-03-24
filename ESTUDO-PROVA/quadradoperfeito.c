@@ -3,7 +3,7 @@
 #include <math.h>
 
 int main(){
-    int n, original = n, quadrado =0;
+    int n,quadrado =0;
     printf("Digite um número inteiro positivo N: ");
     scanf("%d", &n);
 
