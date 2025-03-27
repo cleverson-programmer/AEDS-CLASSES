@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "L2_5.C": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "1.C": "cpp"
     }
 }
