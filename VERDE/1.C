@@ -42,9 +42,9 @@ int main(){
     float resultC = total;
     float resultR = total;
     float resultS = total;
-    printf("Percentual de coelhos: %.2f\n", C / resultC * 100);
-    printf("Percentual de ratos: %.2f\n", R / resultR * 100);
-    printf("Percentual de sapos: %.2f\n", S / resultS * 100);
+    printf("Percentual de coelhos: %.2f\n %", C / resultC * 100);
+    printf("Percentual de ratos: %.2f\n %", R / resultR * 100);
+    printf("Percentual de sapos: %.2f\n %", S / resultS * 100);
 
     return 0;
 }
