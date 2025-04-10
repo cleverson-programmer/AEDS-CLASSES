@@ -25,8 +25,6 @@ int main(){
 
     printf("A quantidade de numeros pares é: %d", result);
 }
-// 4. Maior e menor valor
-// Faça uma função void maiorMenor(int *vet, int n, int *maior, int *menor) que receba um vetor e retorne, por ponteiros, o maior e o menor valor.
 
 // 5. Multiplicação de vetor por escalar
 // Crie uma função void multiplicaEscalar(int *vet, int n, int escalar) que multiplica cada elemento do vetor por um número, usando apenas ponteiros e laços.
