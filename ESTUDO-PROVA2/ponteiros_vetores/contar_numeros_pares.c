@@ -26,26 +26,8 @@ int main(){
     printf("A quantidade de numeros pares é: %d", result);
 }
 
-// 5. Multiplicação de vetor por escalar
-// Crie uma função void multiplicaEscalar(int *vet, int n, int escalar) que multiplica cada elemento do vetor por um número, usando apenas ponteiros e laços.
-
-// 6. Inverter um vetor
-// Escreva uma função void inverter(int *vet, int n) que inverta os elementos do vetor no próprio vetor usando ponteiros.
-
-// 7. Alocação dinâmica e média
-// Crie uma função que use malloc para alocar um vetor de n posições, leia n valores do usuário e calcule a média.
-
 // 8. Concatenar duas strings
 // Faça uma função void concatena(char *dest, char *src) que concatene src no final de dest. Use apenas ponteiros, sem strcat.
-
-// 9. Função que preenche e imprime matriz
-// Crie duas funções:
-
-// void preencher(int **mat, int lin, int col) para preencher a matriz dinamicamente.
-
-// void imprimir(int **mat, int lin, int col) para exibir.
-
-// Utilize ponteiros para ponteiros (int **), alocação dinâmica com malloc, e laços de repetição.
 
 // 10. Lista encadeada simples
 // Implemente uma estrutura de lista encadeada com:
