@@ -5,18 +5,8 @@
 // Verificar palíndromo
 // Faça uma função que diga se uma string é um palíndromo (ex: "ana", "radar").
 
-int palindromo(char *str){
-    int length = strlen(str);
-    
-    for(int i = 0; i < length; i++){
-        if(str[i] != str[length - i - 1]){
-            return 0;
-        }
-    }
-
-    return 1;
-    
-}
+//Protótipo da função
+int palindromo(char *str);
 
 int main(){
     char word[20];
@@ -38,4 +28,17 @@ int main(){
     }
 
     return 0;
+}
+
+int palindromo(char *str){
+    int length = strlen(str);
+    
+    for(int i = 0; i < length; i++){
+        if(str[i] != str[length - i - 1]){
+            return 0;
+        }
+    }
+
+    return 1;
+    
 }

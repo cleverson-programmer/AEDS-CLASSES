@@ -48,7 +48,7 @@ int main(){
     char str[100];
     printf("Digite uma string: ");
     fgets(str, sizeof(str), stdin); // Lê a string do usuário
-    str[strcspn(str, "\n")] = 0; // Remove o caractere de nova linha
+    str[strcspn(str, "\n")] = '\0'; // Remove o caractere de nova linha
     int num_vogais = contarVogais(str);
     printf("Número de vogais: %d\n", num_vogais);
     return 0;
