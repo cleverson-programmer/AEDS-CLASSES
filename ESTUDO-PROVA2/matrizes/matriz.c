@@ -9,6 +9,11 @@ int main(){
     1 3 5
     2 4 6
     */
+
+    //TRAVAR A LINHA PREENCHE EM LINHAS --> Linha fixa e percorre coluna
+    //TRAVAR A COLUNA PREENCHE EM COLUNAS --> Coluna fixa e percorre linha
+
+
     for (int j = 0; j < 3; j++) {         // colunas
         for (int i = 0; i < 2; i++) {     // linhas
             printf("Digite o valor para matriz[%d][%d]: ", i, j);
