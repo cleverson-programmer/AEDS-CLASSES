@@ -33,7 +33,7 @@ typedef struct {
 } Frutas;
 
 
-int struct2(){
+int main(){
 
   //Declarando uma variavel do tipo struct Cliente que contém outra struct aninhada
   Cliente usuario = {"Paulo", 45, {"Rua Maranhão", "Ibirité", 729}};

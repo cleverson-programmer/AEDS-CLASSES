@@ -3,6 +3,8 @@
         "L2_5.C": "cpp",
         "stdio.h": "c",
         "1.C": "cpp",
-        "sstream": "c"
+        "sstream": "c",
+        "L4_01.C": "cpp",
+        "L4pt2_04.C": "cpp"
     }
 }
