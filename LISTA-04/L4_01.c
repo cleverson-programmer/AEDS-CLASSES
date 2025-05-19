@@ -7,6 +7,7 @@ typedef struct {
 } Aluno;
 
 void calcularMedia(Aluno aluno);
+void calcularMediaTotal(Aluno alunos[], int n);
 
 int main() {
     int n;
@@ -31,6 +32,8 @@ int main() {
         calcularMedia(alunos[i]);
     }
 
+    calcularMediaTotal(alunos, n);
+
     return 0;
 }
 
@@ -52,4 +55,16 @@ void calcularMedia(Aluno aluno){
         default:
             printf("Nenhuma opção válida!");
     }
+}
+
+void calcularMediaTotal(Aluno alunos[], int n){
+    float media;
+
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < 3; j++){
+            media += alunos[i].notas[j];
+        }
+    }
+
+    printf("Media total: %.2f", media / n);
 }
