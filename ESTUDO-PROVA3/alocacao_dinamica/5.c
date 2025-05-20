@@ -2,56 +2,61 @@
 // Permita que o usuário cadastre produtos até desejar parar. 
 // Use realloc para aumentar o vetor conforme necessário. Exiba os produtos e libere a memória.
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
+#include <stdio.h>      // Inclusão da biblioteca padrão para entrada e saída
+#include <stdlib.h>     // Inclusão da biblioteca para alocação dinâmica de memória
+#include <string.h>     // Inclusão da biblioteca para manipulação de strings
+#include <ctype.h>      // Inclusão da biblioteca para manipulação de caracteres
 
-
+// Definição da struct Produto com nome (string de até 30 caracteres) e preco (float)
 typedef struct {
     char nome[30];
     float preco;
 } Produto;
 
 int main(){
-    Produto *produtos = NULL;
-    int qtd = 0;
-    char continuar;
+    Produto *produtos = NULL; // Ponteiro para vetor de produtos, inicialmente vazio
+    int qtd = 0;              // Contador de produtos cadastrados
+    char continuar;           // Variável para controlar se o usuário quer continuar
 
     do{
-        //Realocar memoria para ponteiro de vetor de produtos
+        // Realoca memória para armazenar mais um produto
         Produto *temp = (Produto *) realloc(produtos, (qtd + 1) * sizeof(Produto));
-        if(temp == NULL){
+        if(temp == NULL){ // Verifica se a realocação falhou
             printf("Erro de alocação de memória");
-            return 1;
+            return 1; // Encerra o programa em caso de erro
         }
 
-        produtos = temp;
+        produtos = temp; // Atualiza o ponteiro original com o novo endereço de memória
 
-        //Leitura do novo produto;
+        // Leitura dos dados do novo produto
         printf("Produto %d\n", qtd + 1);
-        getchar();
+        getchar(); // Limpa o buffer do teclado (remove '\n' da entrada anterior)
+
         printf("Nome: ");
+        // Lê o nome do produto com segurança, evitando estouro de buffer
         fgets(produtos[qtd].nome, sizeof(produtos[qtd].nome), stdin);
+        // Remove o caractere '\n' lido pelo fgets, se presente
         produtos[qtd].nome[strcspn(produtos[qtd].nome, "\n")] = '\0';
 
         printf("Preço: ");
+        // Lê o preço do produto
         scanf("%f", &produtos[qtd].preco);
 
-        qtd++;
-        getchar();
+        qtd++; // Incrementa a quantidade total de produtos cadastrados
+
+        getchar(); // Limpa o buffer antes de ler o próximo caractere
         printf("Deseja adicionar outro produto? (s/n): ");
-        scanf("%c", &continuar);
+        scanf("%c", &continuar); // Lê a resposta do usuário
 
-    }while(continuar == 's');
+    }while(continuar == 's'); // Continua se o usuário digitar 's'
 
-    // Exibe os produtos
+    // Exibição dos produtos cadastrados
     printf("\nLista de Produtos:\n");
     for (int i = 0; i < qtd; i++) {
         printf("Produto: %s - Preço: R$ %.2f\n", produtos[i].nome, produtos[i].preco);
     }
 
-    free(produtos);
-    return 0;
-}
+    free(produtos); // Libera a memória alocada dinamicamente
 
+    return 0; // Encerra o programa
+}

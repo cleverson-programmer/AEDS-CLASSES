@@ -3,7 +3,6 @@
 // as palavras. Busque a palavra na frase e substitua todas as ocorrências pela segunda palavra.
 // Imprima a frase resultante após a substituição.
 
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
