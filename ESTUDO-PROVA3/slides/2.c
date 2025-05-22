@@ -49,6 +49,7 @@ int main(){
     fread(textoLido, sizeof(char), sizeof(textoLido) - 1, arquivo);
     fclose(arquivo);
 
+    //Mostrando o texto que foi salvo previamente em binário para o usuário
     printf("\nTexto lido do arquivo: %s\n", textoLido);
 
     return 0;
