@@ -6,6 +6,8 @@
         "sstream": "c",
         "L4_01.C": "cpp",
         "L4pt2_04.C": "cpp",
-        "algorithm": "c"
-    }
+        "algorithm": "c",
+        "string": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

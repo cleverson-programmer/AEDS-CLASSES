@@ -2,6 +2,7 @@
 #include <locale.h>
 
 void quadrado(int matriz[3][3]);
+void quadrado2(int matriz[3][3]);
 
 int main(){
     setlocale(LC_ALL, "Portuguese");
@@ -21,8 +22,9 @@ int main(){
         printf("\n");
     }
 
-    printf("Matriz quadrado da diagonal");
+    printf("Matriz quadrado da diagonal\n");
     quadrado(matriz);
+    quadrado2(matriz);
 
     return 0;
 }
@@ -45,6 +47,18 @@ void quadrado(int matriz[3][3]){
     for(int i = 0; i < 3; i++){
         for(int j = 0; j < 3; j++){
             printf("%d ", matrizR[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void quadrado2(int matriz[3][3]){
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            if(i == j){
+                printf("%d", matriz[i][j] * matriz[i][j]);
+            }
         }
         printf("\n");
     }
