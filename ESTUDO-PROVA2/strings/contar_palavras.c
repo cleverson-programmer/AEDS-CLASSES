@@ -28,6 +28,7 @@ int main(){
     printf("Digite um texto:");
     fgets(text, sizeof(text), stdin);
 
+    //Não precisa passar o & pois um vetor já e um ponteiro
     int result = count_words(text);
     printf("Quant. palavras: %d", result);
     return 0;
