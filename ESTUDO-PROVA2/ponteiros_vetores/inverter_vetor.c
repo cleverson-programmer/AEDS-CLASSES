@@ -5,7 +5,7 @@
 
 void inverter(int *vet, int n) {
     int *inicio = vet;
-    int *fim = vet + n - 1;
+    int *fim = vet + n - 1;11
     int temp;
 
     while (inicio < fim) {

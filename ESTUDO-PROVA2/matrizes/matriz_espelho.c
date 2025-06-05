@@ -44,4 +44,4 @@ void espelho(int matriz[3][4]){
         printf("\n");
     }
 
-}
+} 

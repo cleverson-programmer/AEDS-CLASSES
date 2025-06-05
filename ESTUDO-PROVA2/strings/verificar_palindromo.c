@@ -42,3 +42,22 @@ int palindromo(char *str){
     return 1;
     
 }
+
+//Outra forma de resolver:
+void palindromo(char *str){
+    int length = strlen(str);
+    int count = 0;
+    
+    for(int i = 0; i < length; i++){
+        if(str[i] == str[length - i - 1]){  // length - i --> para pegar de trás para frente. --> -1 para descontar o \0 que fica no final da string
+            count++;
+        }
+    }
+
+    if(count == length){
+        printf("palindromo");
+    }else{
+        printf("Não é palindromo");
+    }
+
+}

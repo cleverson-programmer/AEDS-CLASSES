@@ -3,7 +3,7 @@
 
 int compare( char *str, char *str2){
     
-    return strcmp(str, str2) == 0;
+    return strcmp(str, str2);
 }
 
 int main(){
@@ -18,7 +18,7 @@ int main(){
     str2[strcspn(str2, "\n")] = '\0';
 
     int result = compare(str, str2);
-    printf("%d", result);
+    printf("\n%d\n", result);
 
     return 0;
 }

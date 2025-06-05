@@ -10,7 +10,6 @@ int validar(char email[]);
 
 int main(){
     char email[256];
-    int tamanho = sizeof(email) / sizeof(email[0]);
 
     printf("Digite um endereço de email: ");
     fgets(email, sizeof(email), stdin);
