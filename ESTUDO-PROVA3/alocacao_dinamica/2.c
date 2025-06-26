@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+        #include <stdio.h>
+        #include <stdlib.h>
 // Implemente um programa que leia um número indefinido de notas (floats), 
 // usando realloc para aumentar dinamicamente o vetor conforme o usuário insere novas notas. 
 // O programa termina quando o usuário digitar um número negativo. Mostre todas as notas e a média final. Libere a memória com free.

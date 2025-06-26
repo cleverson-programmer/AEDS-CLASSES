@@ -24,7 +24,7 @@ void calcularMedia(){
         //Estrutura para alocação dinâmica de struct é sempre essa
         //Nome da struct *ponteiro de struct temporario = (Nome da struct *) realloc(instância da struct permanente, (controle para incrementar o tamanho da memoria + 1) * sizeof(nome da struct para incrementar o tamanho de toda a struct))
         Habitantes *temp = (Habitantes *) realloc(populacao, (count + 1) * sizeof(Habitantes));
-        if(temp == NULL){
+         if(temp == NULL){
             printf("Erro de alocação de memória\n");
             //Libera memoria para evitar vazamento
             free(populacao);
